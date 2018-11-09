@@ -17,7 +17,7 @@ $i: 1;
   }
   
   .checkbox.input--#{$colour} input::before, .radio.input--#{$colour}::before, .pill-checkbox.input--#{$colour}, .pill-checkbox.input--#{$colour} .pill-checkbox--toggle::before {
-    background-color: rgba($currentHex, .2);
+    background-color: rgba($currentHex, .3);
   }
   $i: $i+1;
 }

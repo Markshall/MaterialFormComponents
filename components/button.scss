@@ -29,7 +29,7 @@ button {
   &:not(:disabled)::after {
     position: absolute;
     content: '';
-    top: 0; left: -100%;
+    top: 0; left: -200%;
     display: block;
     height: 100%;
     width: 60%;
@@ -49,6 +49,7 @@ button {
     bottom: 0%; left: 50%;
     transform: translateX(-50%);
     border-radius: 50% 50% 0 0;
+    pointer-events: none;
   }
 
   &:active::before,

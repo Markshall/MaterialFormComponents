@@ -1,14 +1,14 @@
 .pill-checkbox {
-  width: 40px;
-  height: 14px;
+  width: 36px;
+  height: 12px;
   position: relative;
   background-color: rgba(0, 0, 0, .2);
   border-radius: 20px;
   cursor: pointer;
-  margin: 7px 0;
+  margin: 3px;
   display: inline-block;
 
-  [type="checkbox"] {
+  input {
     position: absolute;
     top: 0; left: 0;
     margin: 0;
@@ -17,14 +17,33 @@
     cursor: pointer;
     -webkit-appearance: none;
     outline: none;
+    
+    &:checked {
+      & ~ .pill-checkbox--toggle {
+        left: calc(100% - 16px);
+        
+        &::before {
+          animation: pulse .2s ease;
+        }
+      }
+    }
+    
+    &:disabled, &:disabled ~ .pill-checkbox--toggle {
+      opacity: .4;
+      cursor: not-allowed;
+    }
+  }
+  
+  &:active .pill-checkbox--toggle {
+    transform: translateY(-50%) scale(.94);
   }
 
   .pill-checkbox--toggle {
     display: block;
     content: '';
     position: absolute;
-    height: 18px;
-    width: 18px;
+    height: 16px;
+    width: 16px;
     top: 50%; left: 0;
     transform: translateY(-50%);
     transition: all .2s ease;
@@ -47,48 +66,30 @@
     }
   }
 
-  [type="checkbox"]:checked ~ .pill-checkbox--toggle::before {
-    animation: pulse .2s ease;
-  }
-
-  &:active .pill-checkbox--toggle {
-    transform: translateY(-50%) scale(.94);
-  }
-
-  [type="checkbox"]:checked ~ .pill-checkbox--toggle {
-    left: calc(100% - 18px);
-  }
-
-  [type="checkbox"]:disabled,
-  [type="checkbox"]:disabled ~ .pill-checkbox--toggle {
-    opacity: .4;
-    cursor: not-allowed;
-  }
-
   &.medium {
-    width: 50px;
-    height: 16px;
+    width: 48px;
+    height: 14px;
     
     .pill-checkbox--toggle {
       height: 20px;
       width: 20px;
     }
 
-    [type="checkbox"]:checked ~ .pill-checkbox--toggle {
+    input:checked ~ .pill-checkbox--toggle {
       left: calc(100% - 20px);
     }
   }
 
   &.large {
     width: 60px;
-    height: 22px;
+    height: 16px;
 
     .pill-checkbox--toggle {
       height: 26px;
       width: 26px;
     }
 
-    [type="checkbox"]:checked ~ .pill-checkbox--toggle {
+    input:checked ~ .pill-checkbox--toggle {
       left: calc(100% - 26px);
     }
   }

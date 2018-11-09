@@ -17,15 +17,11 @@
     &:focus {
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
+      
+      & ~ .textfield-bar {
+        width: calc(100% - 2px);
+      }
     }
-  }
-
-  .textfield.medium {
-    padding: 13px 14px;
-  }
-
-  .textfield.large {
-    padding: 16px 15px;
   }
 
   .textfield-bar {
@@ -40,7 +36,11 @@
     background-color: #aaa;
   }
 
-  & input:focus ~ .textfield-bar {
-    width: calc(100% - 2px);
+  &.medium input {
+    padding: 13px 14px;
+  }
+
+  &.large input {
+    padding: 16px 15px;
   }
 }
