@@ -20,7 +20,7 @@
         animation: pulse .25s ease;
       }
       
-      &:not(:disabled) ~ .checkbox-tick {
+      & ~ .checkbox-tick {
         opacity: 1;
       }
     }

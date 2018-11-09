@@ -46,7 +46,7 @@
       background-color: #000; }
       .checkbox input:checked::before {
         animation: pulse .25s ease; }
-      .checkbox input:checked:not(:disabled) ~ .checkbox-tick {
+      .checkbox input:checked ~ .checkbox-tick {
         opacity: 1; }
     .checkbox input::before {
       display: block;
