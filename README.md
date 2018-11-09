@@ -67,7 +67,7 @@ If your element is single-lined, you add the colour to the element itself, if it
 
 Different sizes can be applied by adding `medium` or `large` to the same class list as your component colour. For example: `<div class="checkbox input--red medium">` or `<input type="radio" class="radio input--pink large" />`
 
-To disable an element, just add the HTML attribute `disabled` to the form element and it will disable the rest of the styling. It applies an alpha-transparency of 0.4 and sets a 'not-allowed' cursor upon hover.
+To disable an element, just add the HTML attribute `disabled` to the form element and it will disable the rest of the styling. It applies an alpha-transparency of 0.4 (except for pill-checkboxes as you are able to see through the toggle-button) and sets a 'not-allowed' cursor upon hover.
 
 ### Checkboxes
 ```html

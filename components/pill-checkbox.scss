@@ -28,7 +28,7 @@
       }
     }
     
-    &:disabled, &:disabled ~ .pill-checkbox--toggle {
+    &:disabled {
       opacity: .4;
       cursor: not-allowed;
     }

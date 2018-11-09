@@ -237,7 +237,7 @@ button {
       left: calc(100% - 16px); }
       .pill-checkbox input:checked ~ .pill-checkbox--toggle::before {
         animation: pulse .2s ease; }
-    .pill-checkbox input:disabled, .pill-checkbox input:disabled ~ .pill-checkbox--toggle {
+    .pill-checkbox input:disabled {
       opacity: .4;
       cursor: not-allowed; }
   .pill-checkbox:active .pill-checkbox--toggle {
@@ -297,6 +297,9 @@ button {
 .button.input--red {
   border-color: #ea1c0d #ea1c0d #a21309 #ea1c0d; }
 
+.pill-checkbox.input--red input:disabled ~ .pill-checkbox--toggle {
+  background-color: #fbb4af; }
+
 .checkbox.input--red input::before, .radio.input--red::before, .pill-checkbox.input--red, .pill-checkbox.input--red .pill-checkbox--toggle::before {
   background-color: rgba(244, 67, 54, 0.3); }
 
@@ -308,6 +311,9 @@ button {
 
 .button.input--green {
   border-color: #2dd07d #2dd07d #209157 #2dd07d; }
+
+.pill-checkbox.input--green input:disabled ~ .pill-checkbox--toggle {
+  background-color: #bff1d7; }
 
 .checkbox.input--green input::before, .radio.input--green::before, .pill-checkbox.input--green, .pill-checkbox.input--green .pill-checkbox--toggle::before {
   background-color: rgba(86, 218, 151, 0.3); }
@@ -321,6 +327,9 @@ button {
 .button.input--blue {
   border-color: #0c7cd5 #0c7cd5 #08528d #0c7cd5; }
 
+.pill-checkbox.input--blue input:disabled ~ .pill-checkbox--toggle {
+  background-color: #9acffa; }
+
 .checkbox.input--blue input::before, .radio.input--blue::before, .pill-checkbox.input--blue, .pill-checkbox.input--blue .pill-checkbox--toggle::before {
   background-color: rgba(33, 150, 243, 0.3); }
 
@@ -332,6 +341,9 @@ button {
 
 .button.input--orange {
   border-color: #cc7a00 #cc7a00 #804c00 #cc7a00; }
+
+.pill-checkbox.input--orange input:disabled ~ .pill-checkbox--toggle {
+  background-color: #ffcc80; }
 
 .checkbox.input--orange input::before, .radio.input--orange::before, .pill-checkbox.input--orange, .pill-checkbox.input--orange .pill-checkbox--toggle::before {
   background-color: rgba(255, 152, 0, 0.3); }
@@ -345,6 +357,9 @@ button {
 .button.input--pink {
   border-color: #c1134e #c1134e #7b0c32 #c1134e; }
 
+.pill-checkbox.input--pink input:disabled ~ .pill-checkbox--toggle {
+  background-color: #f492b4; }
+
 .checkbox.input--pink input::before, .radio.input--pink::before, .pill-checkbox.input--pink, .pill-checkbox.input--pink .pill-checkbox--toggle::before {
   background-color: rgba(233, 30, 99, 0.3); }
 
@@ -356,6 +371,9 @@ button {
 
 .button.input--yellow {
   border-color: #fdce03 #fdce03 #b19002 #fdce03; }
+
+.pill-checkbox.input--yellow input:disabled ~ .pill-checkbox--toggle {
+  background-color: #fef0b3; }
 
 .checkbox.input--yellow input::before, .radio.input--yellow::before, .pill-checkbox.input--yellow, .pill-checkbox.input--yellow .pill-checkbox--toggle::before {
   background-color: rgba(253, 216, 53, 0.3); }
@@ -369,6 +387,9 @@ button {
 .button.input--brown {
   border-color: #593f35 #593f35 #291d18 #593f35; }
 
+.pill-checkbox.input--brown input:disabled ~ .pill-checkbox--toggle {
+  background-color: #b89588; }
+
 .checkbox.input--brown input::before, .radio.input--brown::before, .pill-checkbox.input--brown, .pill-checkbox.input--brown .pill-checkbox--toggle::before {
   background-color: rgba(121, 85, 72, 0.3); }
 
@@ -381,6 +402,9 @@ button {
 .button.input--grey {
   border-color: #858585 #858585 #5e5e5e #858585; }
 
+.pill-checkbox.input--grey input:disabled ~ .pill-checkbox--toggle {
+  background-color: #dedede; }
+
 .checkbox.input--grey input::before, .radio.input--grey::before, .pill-checkbox.input--grey, .pill-checkbox.input--grey .pill-checkbox--toggle::before {
   background-color: rgba(158, 158, 158, 0.3); }
 
@@ -392,6 +416,9 @@ button {
 
 .button.input--purple {
   border-color: #512e90 #512e90 #311b56 #512e90; }
+
+.pill-checkbox.input--purple input:disabled ~ .pill-checkbox--toggle {
+  background-color: #ae94dd; }
 
 .checkbox.input--purple input::before, .radio.input--purple::before, .pill-checkbox.input--purple, .pill-checkbox.input--purple .pill-checkbox--toggle::before {
   background-color: rgba(103, 58, 183, 0.3); }

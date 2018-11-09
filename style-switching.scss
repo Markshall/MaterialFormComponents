@@ -16,6 +16,10 @@ $i: 1;
     border-color: darken($currentHex, 10%) darken($currentHex, 10%) darken($currentHex, 25%) darken($currentHex, 10%);
   }
   
+  .pill-checkbox.input--#{$colour} input:disabled ~ .pill-checkbox--toggle {
+    background-color: lighten($currentHex, 25%);
+  }
+  
   .checkbox.input--#{$colour} input::before, .radio.input--#{$colour}::before, .pill-checkbox.input--#{$colour}, .pill-checkbox.input--#{$colour} .pill-checkbox--toggle::before {
     background-color: rgba($currentHex, .3);
   }
