@@ -60,6 +60,8 @@ This library is wrote in Sass but the compiled CSS document is still available i
 ![Normal state text field](assets/textfield-normal.PNG)
 #### Focused state
 ![Focused state text field](assets/textfield-focused.PNG)
+#### Various sizes
+![Various text field sizes](assets/textfield-sizes.PNG)
 
 ## Usage
 If you don't want to use a coloured component, just omit the `input--x` class from the class list of your element, where `x` is a colour name.
