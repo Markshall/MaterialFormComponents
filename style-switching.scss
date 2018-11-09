@@ -1,0 +1,23 @@
+$colours: red green blue orange pink yellow brown grey purple;
+$hex: #f44336 #56da97 #2196f3 #ff9800 #e91e63 #fdd835 #795548 #9e9e9e #673ab7;
+$i: 1;
+
+@each $colour in $colours {
+  $currentHex: nth($hex, $i);
+  .checkbox.input--#{$colour} input, .radio.input--#{$colour} {
+    border-color: $currentHex;
+  }
+  
+  .button.input--#{$colour}, .checkbox.input--#{$colour} input:checked, .radio.input--#{$colour}:checked::after, .textfield-wrapper.input--#{$colour} .textfield-bar, .pill-checkbox.input--#{$colour} .pill-checkbox--toggle {
+    background-color: $currentHex;
+  }
+  
+  .button.input--#{$colour} {
+    border-color: darken($currentHex, 10%) darken($currentHex, 10%) darken($currentHex, 25%) darken($currentHex, 10%);
+  }
+  
+  .checkbox.input--#{$colour} input::before, .radio.input--#{$colour}::before, .pill-checkbox.input--#{$colour}, .pill-checkbox.input--#{$colour} .pill-checkbox--toggle::before {
+    background-color: rgba($currentHex, .2);
+  }
+  $i: $i+1;
+}

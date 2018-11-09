@@ -1,0 +1,88 @@
+/*
+ * Generalisation: standard checkboxes and radio share similar properties, disabled elements etc
+ */
+.checkbox input, .radio {
+  -webkit-appearance: none;
+  border: 2px solid #000;
+  outline: none;
+  background-color: #fff;
+  transition: background-color .3s ease;
+  cursor: pointer;
+}
+
+.checkbox.medium, .radio.medium {
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox.large, .radio.large {
+  width: 26px;
+  height: 26px;
+}
+
+.checkbox input:disabled,
+.checkbox input:disabled ~ .tick,
+.radio:disabled, button:disabled,
+.pill-checkbox [type="checkbox"]:disabled,
+.textfield-wrapper input:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+/*
+ * Standard checkboxes
+ */
+@import "components/checkbox";
+
+
+/*
+ * Radio buttons
+ */
+@import "components/radio-button";
+
+
+/*
+ * Buttons
+ */
+@import "components/button";
+
+
+/*
+ * Text fields
+ */
+@import "components/textfield";
+
+
+/*
+ * Pill checkboxes
+ */
+@import "components/pill-checkbox";
+
+
+/*
+ * Style switching
+ */
+@import "style-switching";
+
+@keyframes pulse {
+  0% {
+    height: 0%;
+    width: 0%;
+  }
+
+  100% {
+    height: 300%;
+    width: 300%;
+    opacity: .7;
+  }
+}
+
+@keyframes button-shine {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left:200%;
+  }
+}

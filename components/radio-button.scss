@@ -1,0 +1,37 @@
+.radio {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  position: relative;
+  margin: 3px;
+
+  &:checked::after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 60%;
+    width: 60%;
+    top: 50%; left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+  }
+
+  &::before {
+    display: block;
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, .2);
+    top: 50%; left: 50%;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: .2;
+    height: 0%;
+    width: 0%;
+  }
+
+  &:checked::before {
+    animation: pulse .25s ease;
+  }
+}
