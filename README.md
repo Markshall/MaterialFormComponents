@@ -5,6 +5,8 @@ Each component has a various set of sizes (standard/medium/large) and can also u
 
 This library is wrote in Sass but the compiled CSS document is still available in this repository.
 
+[Live Preview](https://mark-eriksson.com/work/projects/MaterialFormComponents/)
+
 ## Features
 * Checkboxes
 * Pill-styled checkboxes
