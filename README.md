@@ -8,11 +8,11 @@ This library is wrote in Sass but the compiled CSS document is still available i
 [Live Preview](https://mark-eriksson.com/work/projects/MaterialFormComponents/)
 
 ## Features
-* Checkboxes
-* Pill-styled checkboxes
-* Radio buttons
-* Buttons
-* Text fields
+* [Checkboxes](#checkboxes)
+* [Pill-styled checkboxes](#pill-checkboxes)
+* [Radio buttons](#radio-buttons)
+* [Buttons](#buttons)
+* [Text fields](#text-fields)
 
 ## Colours
 * Red (#f44336)
