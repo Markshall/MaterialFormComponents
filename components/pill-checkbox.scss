@@ -17,6 +17,8 @@
     cursor: pointer;
     -webkit-appearance: none;
     outline: none;
+    background: none;
+    border: none;
     
     &:checked {
       & ~ .pill-checkbox--toggle {
