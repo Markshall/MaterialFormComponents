@@ -38,8 +38,7 @@ $i: 1;
   }
   
   .select.material--#{$colour} {
-    background-color: $currentHex;
-    background-image: linear-gradient(to bottom, darken($currentHex, 5%), darken($currentHex, 15%));
+    background: $currentHex linear-gradient(to bottom, darken($currentHex, 5%), darken($currentHex, 15%));
     border-color: darken($currentHex, 25%);
   }
   

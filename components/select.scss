@@ -1,7 +1,5 @@
 select {
-  background-color: #000;
-  background: -webkit-linear-gradient(to bottom, #565555, #000);
-  background: linear-gradient(to bottom, #565555, #000);
+  background: #000 linear-gradient(to bottom, #565555, #000);
   outline: none;
   padding: 6px 9px;
   color: #fff;
@@ -14,7 +12,7 @@ select {
   transition: all .2s ease;
   
   &:hover {
-    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .2), inset 0 1px 3px 1px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .2), inset 0 1px 1px 1px rgba(0, 0, 0, .2);
   }
   
   &.medium {
