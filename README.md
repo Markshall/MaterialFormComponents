@@ -3,7 +3,7 @@ A few basic web-form components styled with inspiration from the Google Material
 
 Each component has a various set of sizes (standard/medium/large) and can also use the same colour scheme as other components.
 
-This library is wrote in Sass but the compiled CSS document is still available in this repository.
+This library is wrote in Sass but the compiled [CSS document](material.css) is still available in this repository, as well as a [minified version](material.min.css).
 
 [Live Preview](https://mark-eriksson.com/work/projects/MaterialFormComponents/)
 

@@ -36,6 +36,12 @@
 
 
 /*
+ * Pill checkboxes
+ */
+@import "components/pill-checkbox";
+
+
+/*
  * Radio buttons
  */
 @import "components/radio-button";
@@ -54,16 +60,13 @@
 
 
 /*
- * Pill checkboxes
- */
-@import "components/pill-checkbox";
-
-
-/*
  * Style switching
  */
 @import "style-switching";
 
+/*
+ * Key frames
+ */
 @keyframes pulse {
   0% {
     height: 0%;
@@ -83,6 +86,6 @@
   }
 
   to {
-    left:200%;
+    left: 200%;
   }
 }
