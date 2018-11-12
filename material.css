@@ -254,18 +254,17 @@ button {
  */
 .textfield-wrapper {
   margin-bottom: 3px;
-  position: relative;
-  align-self: flex-end; }
+  position: relative; }
   .textfield-wrapper input {
-    border: 1px solid;
-    border-color: #cecece;
+    border: 1px solid #cecece;
     padding: 8px 9px;
     outline: none;
     border-radius: 3px;
     -webkit-appearance: none;
     width: 100%;
     font-family: inherit;
-    background-color: #fff; }
+    background-color: #fff;
+    margin: 0; }
     .textfield-wrapper input:focus {
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px; }
@@ -276,15 +275,17 @@ button {
     content: '';
     display: block;
     height: 1px;
-    width: 0px;
+    width: 0%;
     transition: all .3s ease-in-out;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    background-color: #aaa; }
+    background-color: #000; }
   .textfield-wrapper.medium input {
+    font-size: 14px;
     padding: 13px 14px; }
   .textfield-wrapper.large input {
+    font-size: 18px;
     padding: 16px 15px; }
 
 /*
