@@ -21,7 +21,8 @@
 .checkbox input:disabled ~ .tick,
 .radio:disabled, button:disabled,
 .pill-checkbox [type="checkbox"]:disabled,
-.textfield-wrapper input:disabled {
+.textfield-wrapper input:disabled,
+.select:disabled {
   opacity: .4;
   cursor: not-allowed; }
 
@@ -45,7 +46,7 @@
     .checkbox input:checked {
       background-color: #000; }
       .checkbox input:checked::before {
-        animation: pulse .25s ease; }
+        animation: pulse 0.25s cubic-bezier(0.4, 0, 0.2, 1); }
       .checkbox input:checked ~ .checkbox-tick {
         opacity: 1; }
     .checkbox input::before {
@@ -74,7 +75,7 @@
     -webkit-mask-size: 12px;
     mask-size: 12px;
     transform: rotate(-6deg);
-    transition: opacity .2s ease; }
+    transition: opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1); }
 
 /*
  * Pill checkboxes
@@ -187,6 +188,32 @@
     width: 0%; }
   .radio:checked::before {
     animation: pulse .25s ease; }
+
+/*
+ * Select menus
+ */
+select {
+  background-color: #000;
+  background: -webkit-linear-gradient(to bottom, #565555, #000);
+  background: linear-gradient(to bottom, #565555, #000);
+  outline: none;
+  padding: 6px 9px;
+  color: #fff;
+  font-family: inherit;
+  border: 1px solid #000;
+  border-radius: 3px;
+  cursor: pointer;
+  background-size: 12px;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: all .2s ease; }
+  select:hover {
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2), inset 0 1px 3px 1px rgba(0, 0, 0, 0.2); }
+  select.medium {
+    padding: 10px 14px;
+    font-size: 14px; }
+  select.large {
+    padding: 13px 18px;
+    font-size: 18px; }
 
 /*
  * Buttons
@@ -357,8 +384,13 @@ button {
 
 .alert.material--red {
   background-color: #f66358;
-  color: #290502;
-  border-color: #d2190b; }
+  color: #a21309;
+  border-color: #a21309; }
+
+.select.material--red {
+  background-color: #f44336;
+  background-image: linear-gradient(to bottom, #f32c1e, #d2190b);
+  border-color: #a21309; }
 
 .checkbox.material--green input, .radio.material--green {
   border-color: #56da97; }
@@ -383,8 +415,13 @@ button {
 
 .alert.material--green {
   background-color: #73e0a9;
-  color: #092818;
-  border-color: #29bb71; }
+  color: #209157;
+  border-color: #209157; }
+
+.select.material--green {
+  background-color: #56da97;
+  background-image: linear-gradient(to bottom, #41d58a, #29bb71);
+  border-color: #209157; }
 
 .checkbox.material--blue input, .radio.material--blue {
   border-color: #2196f3; }
@@ -409,8 +446,13 @@ button {
 
 .alert.material--blue {
   background-color: #43a6f5;
-  color: #010c14;
-  border-color: #0a6ebd; }
+  color: #08528d;
+  border-color: #08528d; }
+
+.select.material--blue {
+  background-color: #2196f3;
+  background-image: linear-gradient(to bottom, #0d8aee, #0a6ebd);
+  border-color: #08528d; }
 
 .checkbox.material--orange input, .radio.material--orange {
   border-color: #ff9800; }
@@ -435,8 +477,13 @@ button {
 
 .alert.material--orange {
   background-color: #ffa624;
-  color: black;
-  border-color: #b36a00; }
+  color: #804c00;
+  border-color: #804c00; }
+
+.select.material--orange {
+  background-color: #ff9800;
+  background-image: linear-gradient(to bottom, #e68900, #b36a00);
+  border-color: #804c00; }
 
 .checkbox.material--pink input, .radio.material--pink {
   border-color: #e91e63; }
@@ -461,8 +508,13 @@ button {
 
 .alert.material--pink {
   background-color: #ec3f7a;
-  color: #070103;
-  border-color: #aa1145; }
+  color: #7b0c32;
+  border-color: #7b0c32; }
+
+.select.material--pink {
+  background-color: #e91e63;
+  background-image: linear-gradient(to bottom, #d81558, #aa1145);
+  border-color: #7b0c32; }
 
 .checkbox.material--yellow input, .radio.material--yellow {
   border-color: #fdd835; }
@@ -487,8 +539,13 @@ button {
 
 .alert.material--yellow {
   background-color: #fddf58;
-  color: #332901;
-  border-color: #e3ba02; }
+  color: #b19002;
+  border-color: #b19002; }
+
+.select.material--yellow {
+  background-color: #fdd835;
+  background-image: linear-gradient(to bottom, #fdd31c, #e3ba02);
+  border-color: #b19002; }
 
 .checkbox.material--brown input, .radio.material--brown {
   border-color: #795548; }
@@ -513,8 +570,13 @@ button {
 
 .alert.material--brown {
   background-color: #8f6555;
-  color: black;
-  border-color: #49332b; }
+  color: #291d18;
+  border-color: #291d18; }
+
+.select.material--brown {
+  background-color: #795548;
+  background-image: linear-gradient(to bottom, #694a3e, #49332b);
+  border-color: #291d18; }
 
 .checkbox.material--grey input, .radio.material--grey {
   border-color: #9e9e9e; }
@@ -539,8 +601,13 @@ button {
 
 .alert.material--grey {
   background-color: #b0b0b0;
-  color: #1f1f1f;
-  border-color: #787878; }
+  color: #5e5e5e;
+  border-color: #5e5e5e; }
+
+.select.material--grey {
+  background-color: #9e9e9e;
+  background-image: linear-gradient(to bottom, #919191, #787878);
+  border-color: #5e5e5e; }
 
 .checkbox.material--purple input, .radio.material--purple {
   border-color: #673ab7; }
@@ -565,8 +632,13 @@ button {
 
 .alert.material--purple {
   background-color: #794ec7;
-  color: black;
-  border-color: #46287d; }
+  color: #311b56;
+  border-color: #311b56; }
+
+.select.material--purple {
+  background-color: #673ab7;
+  background-image: linear-gradient(to bottom, #5c34a4, #46287d);
+  border-color: #311b56; }
 
 /*
  * Key frames

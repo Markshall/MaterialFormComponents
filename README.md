@@ -9,8 +9,9 @@ This library is wrote in Sass but the compiled [CSS document](material.css) is s
 
 ## Features
 * [Checkboxes](#checkboxes)
-* [Pill-styled checkboxes](#pill-checkboxes)
+* [Pill checkboxes](#pill-checkboxes)
 * [Radio buttons](#radio-buttons)
+* [Select menus](#select-menus)
 * [Labels](#labels)
 * [Alerts](#alerts)
 * [Buttons](#buttons)
@@ -52,6 +53,12 @@ This library is wrote in Sass but the compiled [CSS document](material.css) is s
 ![Checked radio button](assets/radio-checked.PNG)
 #### Various sizes
 ![Radio button sizes](assets/radio-sizes.PNG)
+
+### Select menus
+#### Normal state
+![Normal state select menus](assets/select-normal.PNG)
+#### Various sizes
+![Select menu sizes](assets/select-sizes.PNG)
 
 ### Labels
 #### Normal state
@@ -122,6 +129,15 @@ To disable an element, just add the HTML attribute `disabled` to the form elemen
 ### Radio buttons
 ```html
 <input type="radio" class="radio material--blue" />
+```
+
+### Select menus
+```html
+<select class="select material--green">
+  <option>Option 1</option>
+  <option>Option 2</option>
+  <option>Option 3</option>
+</select>
 ```
 
 ### Buttons

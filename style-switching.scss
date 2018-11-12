@@ -33,8 +33,14 @@ $i: 1;
   
   .alert.material--#{$colour} {
     background-color: lighten($currentHex, 7%);
-    color: darken($currentHex, 50%);
-    border-color: darken($currentHex, 15%);
+    color: darken($currentHex, 25%);
+    border-color: darken($currentHex, 25%);
+  }
+  
+  .select.material--#{$colour} {
+    background-color: $currentHex;
+    background-image: linear-gradient(to bottom, darken($currentHex, 5%), darken($currentHex, 15%));
+    border-color: darken($currentHex, 25%);
   }
   
   $i: $i+1;

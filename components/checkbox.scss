@@ -17,7 +17,7 @@
       background-color: #000;
       
       &::before {
-        animation: pulse .25s ease;
+        animation: pulse .25s cubic-bezier(0.4, 0.0, 0.2, 1);
       }
       
       & ~ .checkbox-tick {
@@ -52,6 +52,6 @@
     -webkit-mask-size: 12px;
     mask-size: 12px;
     transform: rotate(-6deg);
-    transition: opacity .2s ease;
+    transition: opacity .1s cubic-bezier(0.4, 0.0, 0.2, 1);
   }
 }

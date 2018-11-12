@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Material Form Components</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     
     <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
@@ -22,7 +22,7 @@
   
   <body ontouchstart="">
     <div class="center">
-      <fieldset class="input-group" id="checkboxes">
+      <fieldset class="input-group" id="checkbox">
         <label for="c1">Checkboxes</label><br />
         <div class="checkbox">
           <input type="checkbox" id="c1" />
@@ -103,7 +103,7 @@
         </div>
       </fieldset>
       
-      <fieldset class="input-group" id="pill-checkboxes">
+      <fieldset class="input-group" id="pill-checkbox">
         <label for="p1">Pill checkboxes</label><br />
         
         <div class="pill-checkbox">
@@ -196,7 +196,7 @@
         </div>
       </fieldset>
 
-      <fieldset class="input-group" id="radio-buttons">
+      <fieldset class="input-group" id="radio-button">
         <label for="r1">Radio buttons</label><br />
         <input type="radio" class="radio" id="r1" />
         <input type="radio" class="radio material--red" />
@@ -221,7 +221,29 @@
         <input type="radio" class="radio material--green large" checked disabled />
       </fieldset>
       
-      <fieldset class="input-group" id="labels">
+      <fieldset class="input-group" id="select">
+        <label for="s1">Select menus</label><br />
+        <select class="select" id="s1"><option>Option 1</option><option>Option 2</option><option>Option 3</option></select>
+        <select class="select material--red"><option>Option 1</option><option>Option 2</option><option>Option 3</option></select>
+        <select class="select material--green"><option>Option 1</option><option>Option 2</option><option>Option 3</option></select>
+        <select class="select material--blue"><option>Option 1</option><option>Option 2</option><option>Option 3</option></select>
+        <select class="select material--orange"><option>Option 1</option><option>Option 2</option><option>Option 3</option></select>
+        <select class="select material--pink"><option>Option 1</option><option>Option 2</option><option>Option 3</option></select>
+        <select class="select material--yellow"><option>Option 1</option><option>Option 2</option><option>Option 3</option></select>
+        <select class="select material--brown"><option>Option 1</option><option>Option 2</option><option>Option 3</option></select>
+        <select class="select material--grey"><option>Option 1</option><option>Option 2</option><option>Option 3</option></select>
+        <select class="select material--purple"><option>Option 1</option><option>Option 2</option><option>Option 3</option></select>
+        <select class="select material--purple" disabled><option>Option 1</option><option>Option 2</option><option>Option 3</option></select>
+        
+        <br /><br />
+        
+        <label for="s2">Select menu sizes</label><br />
+        <select id="s2" class="select"><option>Option 1</option><option>Option 2</option><option>Option 3</option></select>
+        <select class="select material--blue medium"><option>Option 1</option><option>Option 2</option><option>Option 3</option></select>
+        <select class="select material--green large"><option>Option 1</option><option>Option 2</option><option>Option 3</option></select>
+      </fieldset>
+      
+      <fieldset class="input-group" id="label">
         <label>Labels</label><br />
         <label class="label">Label</label>
         <label class="label material--red">Label</label>
@@ -249,7 +271,7 @@
         <label class="label material--blue large">Label</label>
       </fieldset>
       
-      <fieldset class="input-group" id="alerts">
+      <fieldset class="input-group" id="alert">
         <label>Alerts</label><br />
         <div class="alert"><strong>Hey!</strong> How you doing?</div>
         <div class="alert material--red"><strong>Hey!</strong> How you doing?</div>
@@ -270,7 +292,7 @@
         <div class="alert material--green large">Alert</div>
       </fieldset>
       
-      <fieldset class="input-group" id="buttons">
+      <fieldset class="input-group" id="button">
         <label>Buttons</label><br />
         <button type="button" class="button">Button</button>
         <button type="button" class="button material--red">Button</button>
@@ -293,7 +315,7 @@
         <button type="button" class="button material--purple large" disabled>Button</button>
       </fieldset>
       
-      <fieldset class="input-group" id="text-fields">
+      <fieldset class="input-group" id="text-field">
         <label for="t1">Text fields</label><br />
         <div class="textfields">
           <div class="textfield-wrapper"><input type="text" id="t1" /><div class="textfield-bar"></div></div>

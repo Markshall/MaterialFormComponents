@@ -24,7 +24,8 @@
 .checkbox input:disabled ~ .tick,
 .radio:disabled, button:disabled,
 .pill-checkbox [type="checkbox"]:disabled,
-.textfield-wrapper input:disabled {
+.textfield-wrapper input:disabled,
+.select:disabled {
   opacity: .4;
   cursor: not-allowed;
 }
@@ -45,6 +46,12 @@
  * Radio buttons
  */
 @import "components/radio-button";
+
+
+/*
+ * Select menus
+ */
+@import "components/select";
 
 
 /*
