@@ -110,12 +110,11 @@ To disable an element, just add the HTML attribute `disabled` to the form elemen
 ```html
 <label class="label">Label</label>
 ```
-#### Styles
-##### Rounded
+#### Rounded
 ```html
-<label class="label rounded">Rounded</label>
+<label class="label rounded material--pink">Rounded</label>
 ```
-##### Inverted
+#### Inverted
 ```html
 <label class="label inverted material--blue">Inverted colours</label>
 ```
