@@ -6,7 +6,6 @@ body {
   font: 400 14px/1.3 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background: radial-gradient(#fff, #e4e0e1, #b5c3d2);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 

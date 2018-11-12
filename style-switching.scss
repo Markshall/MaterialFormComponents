@@ -32,9 +32,9 @@ $i: 1;
   }
   
   .alert.material--#{$colour} {
-    background-color: lighten($currentHex, 7%);
+    background-color: rgba($currentHex, .4);
     color: darken($currentHex, 25%);
-    border-color: darken($currentHex, 25%);
+    border-color: rgba($currentHex, .4);
   }
   
   .select.material--#{$colour} {
