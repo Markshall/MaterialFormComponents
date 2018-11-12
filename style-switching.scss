@@ -4,24 +4,38 @@ $i: 1;
 
 @each $colour in $colours {
   $currentHex: nth($hex, $i);
-  .checkbox.input--#{$colour} input, .radio.input--#{$colour} {
+  .checkbox.material--#{$colour} input, .radio.material--#{$colour} {
     border-color: $currentHex;
   }
   
-  .button.input--#{$colour}, .checkbox.input--#{$colour} input:checked, .radio.input--#{$colour}:checked::after, .textfield-wrapper.input--#{$colour} .textfield-bar, .pill-checkbox.input--#{$colour} .pill-checkbox--toggle {
+  .button.material--#{$colour}, .checkbox.material--#{$colour} input:checked, .radio.material--#{$colour}:checked::after, .textfield-wrapper.material--#{$colour} .textfield-bar, .pill-checkbox.material--#{$colour} .pill-checkbox--toggle, .label.material--#{$colour} {
     background-color: $currentHex;
   }
   
-  .button.input--#{$colour} {
+  .button.material--#{$colour} {
     border-color: darken($currentHex, 10%) darken($currentHex, 10%) darken($currentHex, 25%) darken($currentHex, 10%);
   }
   
-  .pill-checkbox.input--#{$colour} input:disabled ~ .pill-checkbox--toggle {
+  .pill-checkbox.material--#{$colour} input:disabled ~ .pill-checkbox--toggle {
     background-color: lighten($currentHex, 25%);
   }
   
-  .checkbox.input--#{$colour} input::before, .radio.input--#{$colour}::before, .pill-checkbox.input--#{$colour}, .pill-checkbox.input--#{$colour} .pill-checkbox--toggle::before {
+  .checkbox.material--#{$colour} input::before, .radio.material--#{$colour}::before, .pill-checkbox.material--#{$colour}, .pill-checkbox.material--#{$colour} .pill-checkbox--toggle::before {
     background-color: rgba($currentHex, .3);
   }
+  
+  .label.material--#{$colour}.inverted {
+    background-color: #fff;
+    color: $currentHex;
+    border-color: $currentHex;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+  }
+  
+  .alert.material--#{$colour} {
+    background-color: lighten($currentHex, 7%);
+    color: darken($currentHex, 50%);
+    border-color: darken($currentHex, 15%);
+  }
+  
   $i: $i+1;
 }

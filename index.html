@@ -8,61 +8,71 @@
     <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
     <link rel="stylesheet" href="document.css" />
     <link rel="stylesheet" href="material.min.css" />
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21727306-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-21727306-1');
+		</script>
   </head>
   
   <body ontouchstart="">
     <div class="center">
-      <fieldset class="input-group">
+      <fieldset class="input-group" id="checkboxes">
         <label for="c1">Checkboxes</label><br />
         <div class="checkbox">
           <input type="checkbox" id="c1" />
           <div class="checkbox-tick"></div>
         </div>
-        <div class="checkbox input--red">
+        <div class="checkbox material--red">
           <input type="checkbox" />
           <div class="checkbox-tick"></div>
         </div>
-        <div class="checkbox input--green">
+        <div class="checkbox material--green">
           <input type="checkbox" />
           <div class="checkbox-tick"></div>
         </div>
-        <div class="checkbox input--blue">
+        <div class="checkbox material--blue">
           <input type="checkbox" />
           <div class="checkbox-tick"></div>
         </div>
-        <div class="checkbox input--orange">
+        <div class="checkbox material--orange">
           <input type="checkbox" />
           <div class="checkbox-tick"></div>
         </div>
-        <div class="checkbox input--pink">
+        <div class="checkbox material--pink">
           <input type="checkbox" />
           <div class="checkbox-tick"></div>
         </div>
-        <div class="checkbox input--yellow">
+        <div class="checkbox material--yellow">
           <input type="checkbox" />
           <div class="checkbox-tick"></div>
         </div>
-        <div class="checkbox input--brown">
+        <div class="checkbox material--brown">
           <input type="checkbox" />
           <div class="checkbox-tick"></div>
         </div>
-        <div class="checkbox input--grey">
+        <div class="checkbox material--grey">
           <input type="checkbox" />
           <div class="checkbox-tick"></div>
         </div>
-        <div class="checkbox input--purple">
+        <div class="checkbox material--purple">
           <input type="checkbox" />
           <div class="checkbox-tick"></div>
         </div>
-        <div class="checkbox input--purple">
+        <div class="checkbox material--purple">
           <input type="checkbox" />
           <div class="checkbox-tick"></div>
         </div>
-        <div class="checkbox input--purple">
+        <div class="checkbox material--purple">
           <input type="checkbox" disabled />
           <div class="checkbox-tick"></div>
         </div>
-        <div class="checkbox input--purple">
+        <div class="checkbox material--purple">
           <input type="checkbox" disabled checked />
           <div class="checkbox-tick"></div>
         </div>
@@ -71,54 +81,29 @@
         
         <label for="c2">Checkbox sizes</label><br />
         
-        <div class="checkbox input--purple">
+        <div class="checkbox material--purple">
           <input type="checkbox" id="c2" />
           <div class="checkbox-tick"></div>
         </div>
-        <div class="checkbox input--pink medium">
+        <div class="checkbox material--pink medium">
           <input type="checkbox" />
           <div class="checkbox-tick"></div>
         </div>
-        <div class="checkbox input--green large">
+        <div class="checkbox material--green large">
           <input type="checkbox" />
           <div class="checkbox-tick"></div>
         </div>
-        <div class="checkbox input--green large">
+        <div class="checkbox material--green large">
           <input type="checkbox" disabled />
           <div class="checkbox-tick"></div>
         </div>
-        <div class="checkbox input--green large">
+        <div class="checkbox material--green large">
           <input type="checkbox" checked disabled />
           <div class="checkbox-tick"></div>
         </div>
       </fieldset>
-
-      <fieldset class="input-group">
-        <label for="r1">Radio buttons</label><br />
-        <input type="radio" class="radio" id="r1" />
-        <input type="radio" class="radio input--red" />
-        <input type="radio" class="radio input--green" />
-        <input type="radio" class="radio input--blue" />
-        <input type="radio" class="radio input--orange" />
-        <input type="radio" class="radio input-pink" />
-        <input type="radio" class="radio input--yellow" />
-        <input type="radio" class="radio input--brown" />
-        <input type="radio" class="radio input--grey" />
-        <input type="radio" class="radio input--purple" />
-        <input type="radio" class="radio input--purple" disabled />
-        <input type="radio" class="radio input--purple" checked disabled />
-        
-        <br />
-        
-        <label for="r2">Radio button sizes</label><br />
-        <input type="radio" class="radio" id="r2" />
-        <input type="radio" class="radio input--pink medium" />
-        <input type="radio" class="radio input--green large" />
-        <input type="radio" class="radio input--green large" disabled />
-        <input type="radio" class="radio input--green large" checked disabled />
-      </fieldset>
       
-      <fieldset class="input-group">
+      <fieldset class="input-group" id="pill-checkboxes">
         <label for="p1">Pill checkboxes</label><br />
         
         <div class="pill-checkbox">
@@ -126,57 +111,57 @@
           <div class="pill-checkbox--toggle"></div>
         </div>
         
-        <div class="pill-checkbox input--red">
+        <div class="pill-checkbox material--red">
           <input type="checkbox" />
           <div class="pill-checkbox--toggle"></div>
         </div>
         
-        <div class="pill-checkbox input--green">
+        <div class="pill-checkbox material--green">
           <input type="checkbox" />
           <div class="pill-checkbox--toggle"></div>
         </div>
         
-        <div class="pill-checkbox input--blue">
+        <div class="pill-checkbox material--blue">
           <input type="checkbox" />
           <div class="pill-checkbox--toggle"></div>
         </div>
         
-        <div class="pill-checkbox input--orange">
+        <div class="pill-checkbox material--orange">
           <input type="checkbox" />
           <div class="pill-checkbox--toggle"></div>
         </div>
         
-        <div class="pill-checkbox input--pink">
+        <div class="pill-checkbox material--pink">
           <input type="checkbox" />
           <div class="pill-checkbox--toggle"></div>
         </div>
         
-        <div class="pill-checkbox input--yellow">
+        <div class="pill-checkbox material--yellow">
           <input type="checkbox" />
           <div class="pill-checkbox--toggle"></div>
         </div>
         
-        <div class="pill-checkbox input--brown">
+        <div class="pill-checkbox material--brown">
           <input type="checkbox" />
           <div class="pill-checkbox--toggle"></div>
         </div>
         
-        <div class="pill-checkbox input--grey">
+        <div class="pill-checkbox material--grey">
           <input type="checkbox" />
           <div class="pill-checkbox--toggle"></div>
         </div>
         
-        <div class="pill-checkbox input--purple">
+        <div class="pill-checkbox material--purple">
           <input type="checkbox" />
           <div class="pill-checkbox--toggle"></div>
         </div>
         
-        <div class="pill-checkbox input--purple">
+        <div class="pill-checkbox material--purple">
           <input type="checkbox" disabled />
           <div class="pill-checkbox--toggle"></div>
         </div>
         
-        <div class="pill-checkbox input--purple">
+        <div class="pill-checkbox material--purple">
           <input type="checkbox" checked disabled />
           <div class="pill-checkbox--toggle"></div>
         </div>
@@ -185,77 +170,151 @@
         
         <label for="p2">Pill checkbox sizes</label><br />
         
-        <div class="pill-checkbox input--blue">
+        <div class="pill-checkbox material--blue">
           <input type="checkbox" id="p2" />
           <div class="pill-checkbox--toggle"></div>
         </div>
         
-        <div class="pill-checkbox input--pink medium">
+        <div class="pill-checkbox material--pink medium">
           <input type="checkbox" />
           <div class="pill-checkbox--toggle"></div>
         </div>
         
-        <div class="pill-checkbox input--orange large">
+        <div class="pill-checkbox material--orange large">
           <input type="checkbox" />
           <div class="pill-checkbox--toggle"></div>
         </div>
         
-        <div class="pill-checkbox input--orange large">
+        <div class="pill-checkbox material--orange large">
           <input type="checkbox" disabled />
           <div class="pill-checkbox--toggle"></div>
         </div>
         
-        <div class="pill-checkbox input--orange large">
+        <div class="pill-checkbox material--orange large">
           <input type="checkbox" checked disabled />
           <div class="pill-checkbox--toggle"></div>
         </div>
       </fieldset>
+
+      <fieldset class="input-group" id="radio-buttons">
+        <label for="r1">Radio buttons</label><br />
+        <input type="radio" class="radio" id="r1" />
+        <input type="radio" class="radio material--red" />
+        <input type="radio" class="radio material--green" />
+        <input type="radio" class="radio material--blue" />
+        <input type="radio" class="radio material--orange" />
+        <input type="radio" class="radio input-pink" />
+        <input type="radio" class="radio material--yellow" />
+        <input type="radio" class="radio material--brown" />
+        <input type="radio" class="radio material--grey" />
+        <input type="radio" class="radio material--purple" />
+        <input type="radio" class="radio material--purple" disabled />
+        <input type="radio" class="radio material--purple" checked disabled />
+        
+        <br />
+        
+        <label for="r2">Radio button sizes</label><br />
+        <input type="radio" class="radio" id="r2" />
+        <input type="radio" class="radio material--pink medium" />
+        <input type="radio" class="radio material--green large" />
+        <input type="radio" class="radio material--green large" disabled />
+        <input type="radio" class="radio material--green large" checked disabled />
+      </fieldset>
       
-      <fieldset class="input-group">
+      <fieldset class="input-group" id="labels">
+        <label>Labels</label><br />
+        <label class="label">Label</label>
+        <label class="label material--red">Label</label>
+        <label class="label material--green">Label</label>
+        <label class="label material--blue">Label</label>
+        <label class="label material--orange">Label</label>
+        <label class="label material--pink">Label</label>
+        <label class="label material--yellow">Label</label>
+        <label class="label material--brown">Label</label>
+        <label class="label material--grey">Label</label>
+        <label class="label material--purple">Label</label>
+        
+        <br /><br />
+        
+        <label>Label styles</label><br />
+        <label class="label">Normal</label>
+        <label class="label rounded">Rounded</label>
+        <label class="label material--pink inverted">Inverted</label>
+        
+        <br /><br />
+        
+        <label>Label sizes</label><br />
+        <label class="label">Label</label>
+        <label class="label material--green medium">Label</label>
+        <label class="label material--blue large">Label</label>
+      </fieldset>
+      
+      <fieldset class="input-group" id="alerts">
+        <label>Alerts</label><br />
+        <div class="alert"><strong>Hey!</strong> How you doing?</div>
+        <div class="alert material--red"><strong>Hey!</strong> How you doing?</div>
+        <div class="alert material--green"><strong>Hey!</strong> How you doing?</div>
+        <div class="alert material--blue"><strong>Hey!</strong> How you doing?</div>
+        <div class="alert material--orange"><strong>Hey!</strong> How you doing?</div>
+        <div class="alert material--pink"><strong>Hey!</strong> How you doing?</div>
+        <div class="alert material--yellow"><strong>Hey!</strong> How you doing?</div>
+        <div class="alert material--brown"><strong>Hey!</strong> How you doing?</div>
+        <div class="alert material--grey"><strong>Hey!</strong> How you doing?</div>
+        <div class="alert material--purple"><strong>Hey!</strong> How you doing?</div>
+        
+        <br /><br />
+        
+        <label>Alert sizes</label><br />
+        <div class="alert">Alert</div>
+        <div class="alert material--pink medium">Alert</div>
+        <div class="alert material--green large">Alert</div>
+      </fieldset>
+      
+      <fieldset class="input-group" id="buttons">
         <label>Buttons</label><br />
         <button type="button" class="button">Button</button>
-        <button type="button" class="button input--red">Button</button>
-        <button type="button" class="button input--green">Button</button>
-        <button type="button" class="button input--blue">Button</button>
-        <button type="button" class="button input--orange">Button</button>
-        <button type="button" class="button input--pink">Button</button>
-        <button type="button" class="button input--yellow">Button</button>
-        <button type="button" class="button input--brown">Button</button>
-        <button type="button" class="button input--grey">Button</button>
-        <button type="button" class="button input--purple">Button</button>
-        <button type="button" class="button input--purple" disabled>Button</button>
+        <button type="button" class="button material--red">Button</button>
+        <button type="button" class="button material--green">Button</button>
+        <button type="button" class="button material--blue">Button</button>
+        <button type="button" class="button material--orange">Button</button>
+        <button type="button" class="button material--pink">Button</button>
+        <button type="button" class="button material--yellow">Button</button>
+        <button type="button" class="button material--brown">Button</button>
+        <button type="button" class="button material--grey">Button</button>
+        <button type="button" class="button material--purple">Button</button>
+        <button type="button" class="button material--purple" disabled>Button</button>
         
         <br />
         
         <label for="c11">Button sizes</label><br />
         <button type="button" class="button">Button</button>
-        <button type="button" class="button input--brown medium">Button</button>
-        <button type="button" class="button input--purple large">Button</button>
-        <button type="button" class="button input--purple large" disabled>Button</button>
+        <button type="button" class="button material--brown medium">Button</button>
+        <button type="button" class="button material--purple large">Button</button>
+        <button type="button" class="button material--purple large" disabled>Button</button>
       </fieldset>
       
-      <fieldset class="input-group">
+      <fieldset class="input-group" id="text-fields">
         <label for="t1">Text fields</label><br />
         <div class="textfields">
           <div class="textfield-wrapper"><input type="text" id="t1" /><div class="textfield-bar"></div></div>
-          <div class="textfield-wrapper input--red"><input type="text" /><div class="textfield-bar"></div></div>
-          <div class="textfield-wrapper input--green"><input type="text" /><div class="textfield-bar"></div></div>
-          <div class="textfield-wrapper input--blue"><input type="text" /><div class="textfield-bar"></div></div>
-          <div class="textfield-wrapper input--orange"><input type="text" /><div class="textfield-bar"></div></div>
-          <div class="textfield-wrapper input--pink"><input type="text" /><div class="textfield-bar"></div></div>
-          <div class="textfield-wrapper input--yellow"><input type="text" /><div class="textfield-bar"></div></div>
-          <div class="textfield-wrapper input--brown"><input type="text" /><div class="textfield-bar"></div></div>
-          <div class="textfield-wrapper input--grey"><input type="text" /><div class="textfield-bar"></div></div>
-          <div class="textfield-wrapper input--purple"><input type="text" /><div class="textfield-bar"></div></div>
-          <div class="textfield-wrapper input--purple"><input type="text" disabled /><div class="textfield-bar"></div></div>
+          <div class="textfield-wrapper material--red"><input type="text" /><div class="textfield-bar"></div></div>
+          <div class="textfield-wrapper material--green"><input type="text" /><div class="textfield-bar"></div></div>
+          <div class="textfield-wrapper material--blue"><input type="text" /><div class="textfield-bar"></div></div>
+          <div class="textfield-wrapper material--orange"><input type="text" /><div class="textfield-bar"></div></div>
+          <div class="textfield-wrapper material--pink"><input type="text" /><div class="textfield-bar"></div></div>
+          <div class="textfield-wrapper material--yellow"><input type="text" /><div class="textfield-bar"></div></div>
+          <div class="textfield-wrapper material--brown"><input type="text" /><div class="textfield-bar"></div></div>
+          <div class="textfield-wrapper material--grey"><input type="text" /><div class="textfield-bar"></div></div>
+          <div class="textfield-wrapper material--purple"><input type="text" /><div class="textfield-bar"></div></div>
+          <div class="textfield-wrapper material--purple"><input type="text" disabled /><div class="textfield-bar"></div></div>
         </div>
         
         <br />
         
         <label for="t2">Text field sizes</label><br />
-        <div class="textfield-wrapper input--blue"><input type="text" id="t2" value="" /><div class="textfield-bar"></div></div>
-        <div class="textfield-wrapper input--purple medium"><input type="text" value='class="medium"' /><div class="textfield-bar"></div></div>
-        <div class="textfield-wrapper input--red large"><input type="text" value='class="large"' /><div class="textfield-bar"></div></div>
+        <div class="textfield-wrapper material--blue"><input type="text" id="t2" value="" /><div class="textfield-bar"></div></div>
+        <div class="textfield-wrapper material--purple medium"><input type="text" value='class="medium"' /><div class="textfield-bar"></div></div>
+        <div class="textfield-wrapper material--red large"><input type="text" value='class="large"' /><div class="textfield-bar"></div></div>
       </fieldset>
     </div>
   </body>
